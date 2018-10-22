@@ -1,0 +1,29 @@
+tamanho banco de dados 41914 MB;
+tamanho arquivo binario 8GB;
+
+#1     ['SELECT pais, sexo, count(*) FROM pessoa GROUP BY pais, sexo',134.5,1460.89]
+#Media ['SELECT pais, sexo, count(*) FROM pessoa GROUP BY pais, sexo',132.76,1387.39]
+
+#1     ['SELECT pais, sexo, avg(renda) FROM pessoa GROUP BY pais, sexo',114.14,1864.55]
+#Media ['SELECT pais, sexo, avg(renda) FROM pessoa GROUP BY pais, sexo',118.23,1887.23]
+
+#1     ['SELECT pais, sexo, avg(idade) FROM pessoa GROUP BY pais, sexo',115.5,1768.78]
+#Media ['SELECT pais, sexo, avg(idade) FROM pessoa GROUP BY pais, sexo',116.63,1750.11]
+
+#1     ['SELECT pais, sexo, count(*) FROM pessoa WHERE pais = 15 GROUP BY pais, sexo',100.9,765.79]
+#Media ['SELECT pais, sexo, count(*) FROM pessoa WHERE pais = 15 GROUP BY pais, sexo',94.7,747.83]
+
+#1     ['SELECT pais, sexo, count(*) FROM pessoa WHERE pais = 15 AND sexo = 'f'',101.6,616.91]
+#Media ['SELECT pais, sexo, count(*) FROM pessoa WHERE pais = 15 AND sexo = 'f'',106.82,615.99]
+
+#1     ['SELECT pais, sexo, count(*) FROM pessoa WHERE pais >=0 AND pais <=15 GROUP BY pais, sexo',103.3,654.59]
+#Media ['SELECT pais, sexo, count(*) FROM pessoa WHERE pais >=0 AND pais <=15 GROUP BY pais, sexo',111.57,661.33]
+
+#1     ['SELECT pais, sexo, count(*) FROM pessoa WHERE pais >= 100 AND escolaridade = 2 GROUP BY pais, sexo',102.9,810.69]
+#Media ['SELECT pais, sexo, count(*) FROM pessoa WHERE pais >= 100 AND escolaridade = 2 GROUP BY pais, sexo',100.97,798.48]
+
+#1     ['SELECT pais, sexo, count(*) FROM pessoa WHERE pais = 1 AND idioma = 1099 GROUP BY pais, sexo',95,4,647.74]
+#Media ['SELECT pais, sexo, count(*) FROM pessoa WHERE pais = 1 AND idioma = 1099 GROUP BY pais, sexo',99.22,644.58]
+
+#1     ['SELECT pais, sexo, count(*) FROM pessoa WHERE pais = 15 AND sexo = 'm' AND renda >= 1000 GROUP BY pais, sexo',96.5,654.25]
+#Media ['SELECT pais, sexo, count(*) FROM pessoa WHERE pais = 15 AND sexo = 'm' AND renda >=' 1000 GROUP BY pais, sexo',94.86,659.10]
